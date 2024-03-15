@@ -24,8 +24,8 @@ hostname = gateway.ergediandian.com
 *******************************/
 
 var body = $response.body
-.replace(/vip_endtime":"\d+"/g,'vip_endtime":"4567891456"')
-.replace(/vip":\d/g,'vip":1')
+.replace(/"vip_endtime":"\d+"/g,'"vip_endtime":"4567891456"')
+.replace(/"vip":\d/g,'"vip":1')
 .replace(/"vip_day":"\d+"/g,'"vip_day":"99999"')
 .replace(/"nickname":".*?"/g,'"nickname":"彭于晏"')
 .replace(/"is_vip":"0"/g,'"is_vip":"1"')
