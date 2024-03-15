@@ -31,4 +31,5 @@ var body = $response.body
 .replace(/"vip_endtime":"\d+"/g,'"vip_endtime":"4567891456"')
 .replace(/"is_svip":\d/g,'"is_svip":1')
 .replace(/"svip_endtime":"\d+"/g,'"svip_endtime":"4567891456"')
+.replace(/"username":"\d+"/g,'"svip_endtime":"1826140673"')
 $done({ body });
