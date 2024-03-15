@@ -23,8 +23,7 @@ hostname = gateway.ergediandian.com
 
 *******************************/
 
-var body = $response.body
-.replace(/"nickname":".*?"/g,'"nickname":"彭于晏"')
+var body = $response.body.replace(/"nickname":".*?"/g,'"nickname":"彭于晏"')
 .replace(/"vip":\d/g,'"vip":1')
 .replace(/"vip_day":"\d+"/g,'"vip_day":"99999"')
 .replace(/"is_vip":\d/g,'"is_vip":1')
